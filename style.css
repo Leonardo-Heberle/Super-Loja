@@ -39,10 +39,12 @@ header{
 }
 
 .logo img{
-    width: 500px;
-    height: auto;
-
-    object-fit: contain;
+    width: 300px;
+    filter:
+    drop-shadow(3px 0 white)
+    drop-shadow(-3px 0 white)
+    drop-shadow(0 3px white)
+    drop-shadow(0 -3px white);
 }
 
 
