@@ -1,0 +1,325 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* BODY */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e9e9e9;
+}
+
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+header{
+    width: 100%;
+    height: 140px;
+    background-color: #e10000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 40px;
+}
+
+
+/* LOGO */
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 450px;
+    filter:
+    drop-shadow(3px 0 white)
+    drop-shadow(-3px 0 white)
+    drop-shadow(0 3px white)
+    drop-shadow(0 -3px white);
+}
+
+
+/* PESQUISA */
+
+.pesquisa {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.icone-pesquisa {
+    position: absolute;
+    right: 12px;
+    font-size: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.icone-pesquisa:hover {
+    transform: scale(1.3) rotate(15deg);
+    filter: drop-shadow(0, 0, 8px, cyan);
+    animation: arcoiris 0.6s infinite alternate;
+}
+
+@keyframes arcoiris{
+
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.4) rotate(20deg);
+    }
+
+}
+.pesquisa input {
+    width: 400px;
+    padding: 12px 45px 12px 12px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+/* MENU */
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #ffd700;
+}
+
+
+/* ========================= */
+/* MAIN */
+/* ========================= */
+
+main{
+    display: flex;
+
+    min-height: 100vh;
+}
+
+
+/* ========================= */
+/* SIDEBAR */
+/* ========================= */
+
+.sidebar{
+    width: 320px;
+
+    background-color: #e10000;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* TITIO AVÔ */
+
+.titio-avo img{
+    width: 220px;
+    margin-bottom: 40px;
+    filter:
+    drop-shadow(3px 0 white)
+    drop-shadow(-3px 0 white)
+    drop-shadow(0 3px white)
+    drop-shadow(0 -3px white);
+}
+
+
+/* PRODUTO DO DIA */
+
+.produto-dia{
+    width: 100%;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+
+.produto-dia h2{
+    margin-bottom: 15px;
+
+    color: #8b0000;
+}
+
+
+.produto-dia img{
+    width: 100%;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+
+.produto-dia h3{
+    margin-bottom: 10px;
+}
+
+
+.produto-dia .preco{
+    font-size: 24px;
+    font-weight: bold;
+
+    color: green;
+
+    margin-bottom: 15px;
+}
+
+
+.produto-dia button{
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #8b0000;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.produto-dia button:hover{
+    background-color: #690000;
+}
+
+
+/* ========================= */
+/* CATÁLOGO */
+/* ========================= */
+
+.catalogo{
+    flex: 1;
+
+    padding: 40px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* PRODUTO */
+
+.produto{
+    background-color: white;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+
+.produto:hover{
+    transform: scale(1.03);
+}
+
+
+.produto img{
+    width: 100%;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+
+.produto h3{
+    margin-bottom: 10px;
+}
+
+
+.produto .preco{
+    color: green;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+.produto button{
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #8b0000;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.produto button:hover{
+    background-color: #690000;
+}
+
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+footer{
+    background-color: #111;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
