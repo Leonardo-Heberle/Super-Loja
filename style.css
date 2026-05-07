@@ -39,7 +39,7 @@ header{
 }
 
 .logo img{
-    width: 400px;
+    width: 450px;
     filter:
     drop-shadow(3px 0 white)
     drop-shadow(-3px 0 white)
@@ -143,8 +143,12 @@ main{
 
 .titio-avo img{
     width: 220px;
-
     margin-bottom: 40px;
+    filter:
+    drop-shadow(3px 0 white)
+    drop-shadow(-3px 0 white)
+    drop-shadow(0 3px white)
+    drop-shadow(0 -3px white);
 }
 
 
